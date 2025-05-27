@@ -8,11 +8,8 @@
   --light: #fff;
 }
 
-* {
+body {
   background: var(--background);
   color: var(--dark);
-}
-
-body {
   font-family: "Roboto", sans-serif;
 }
