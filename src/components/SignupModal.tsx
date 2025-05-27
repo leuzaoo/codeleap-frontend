@@ -2,6 +2,8 @@ import { useContext, useState, FormEvent } from "react";
 
 import { UserContext } from "../context/UserContext";
 
+import InputField from "./InputField";
+
 export default function SignupModal() {
   const { username, setUsername } = useContext(UserContext);
   const [input, setInput] = useState<string>("");
@@ -20,13 +22,14 @@ export default function SignupModal() {
       <div className="w-11/12 max-w-[500px] rounded-xl border border-[#ccc] bg-white p-6">
         <h2 className="mb-6 text-xl font-bold">Welcome to CodeLeap network!</h2>
         <form onSubmit={handleSubmit} className="w-full">
-          <label>Please enter your username</label>
-          <input
+          <label className="block text-sm font-medium">
+            Please enter your username
+          </label>
+          <InputField
             type="text"
             placeholder="John Doe"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="mt-2 w-full rounded-lg border border-[#777] px-3 py-2 text-sm outline-none placeholder:text-[#ccc]"
           />
           <div className="mt-4 flex justify-end">
             <button
