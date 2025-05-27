@@ -1,3 +1,4 @@
+import { PencilIcon, Trash2Icon } from "lucide-react";
 import dayjs from "dayjs";
 
 import { Post } from "../../types/Post";
@@ -19,21 +20,21 @@ export default function PostItem({
 
   return (
     <div className="overflow-hidden rounded-xl border bg-white">
-      <div className="bg-light-blue flex items-center justify-between px-6 py-3 text-white">
+      <div className="flex items-center justify-between bg-light-blue px-6 py-3 text-white">
         <h4 className="text-2xl font-semibold">{post.title}</h4>
         {isOwner && (
-          <div className="space-x-2">
+          <div className="flex space-x-2">
             <button
               onClick={() => onDelete(post)}
               className="hover:text-red-200"
             >
-              🗑️
+              <Trash2Icon size={20} />
             </button>
             <button
               onClick={() => onEdit(post)}
               className="hover:text-yellow-200"
             >
-              ✏️
+              <PencilIcon size={20} />
             </button>
           </div>
         )}
