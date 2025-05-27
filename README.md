@@ -13,7 +13,8 @@ Uma aplicação de exemplo para o teste da CodeLeap Network, construída com:
 
 ## 🌐 Demo
 
-> codeleap-frontend.netlify.app
+> 
+> **[codeleap-frontend.netlify.app](codeleap-frontend.netlify.app)**
 
 ---
 
