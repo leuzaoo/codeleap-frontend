@@ -13,7 +13,7 @@ Uma aplicação de exemplo para o teste da CodeLeap Network, construída com:
 
 ## 🌐 Demo
 
-> <a href="codeleap-frontend.netlify.app" target="_blank">Clique aqui para ver funcionando.</a>
+<a href="codeleap-frontend.netlify.app" target="_blank">Clique aqui para ver funcionando.</a>
 
 ---
 
